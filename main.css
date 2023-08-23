@@ -289,6 +289,21 @@
     justify-content: space-evenly;
 }
 
+.parol-forget{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    line-height: 27px;
+    padding: 19px 0;
+}
+
+.parol-forget a{
+    color: #00ab2d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .head-phone svg{
     margin-bottom: 3px;
     padding: .5px;
