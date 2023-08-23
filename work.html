@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.ustabor.uz/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="work.css">
+    <title>Katalog - Ustabor.uz</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head-header">
+        <div class="head-header1">
+            <a href="index.html" class="logo">
+                <img src="https://www.ustabor.uz/images/logo/logo_uz.svg" alt="">
+            </a>
+            <button onmouseover="cityShake(this)" onmouseout="cityChoose(this)" class="flag-uz btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="flag-img"></div>
+                <div id="city-names">Toshkent</div>
+                <div class="flag-shake"></div>
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 " id="exampleModalLabel">Shahringizni tanlang </h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body city">
+                      <div>
+                        <button onclick="cityName1()" type="button" class="btn city1">Toshkent</button>
+                        <button onclick="cityName2()" type="button" class="btn city2">Buxoro</button>
+                        <button onclick="cityName3()" type="button" class="btn city3">Andijon</button>
+                        <button onclick="cityName4()" type="button" class="btn city4">Jizzax</button>
+                        <button onclick="cityName5()" type="button" class="btn city5">Qashqadaryo</button>
+                        <button onclick="cityName6()" type="button" class="btn city6">Navoiy</button>
+                      </div>
+                      <div>
+                        <button onclick="cityName7()" type="button" class="btn city7">Namangan</button>
+                        <button onclick="cityName8()" type="button" class="btn city8">Samarqand</button>
+                        <button onclick="cityName9()" type="button" class="btn city9">Termiz</button>
+                        <button onclick="cityName10()" type="button" class="btn city10">Sirdaryo</button>
+                        <button onclick="cityName11()" type="button" class="btn city11">Farg'ona</button>
+                        <button onclick="cityName12()" type="button" class="btn city12">Qoraqalpoq</button>
+                      </div>
+                      <div>
+                        <button onclick="cityName13()" type="button" class="btn city13">Toshkent viloyati</button>
+                        <button onclick="cityName14()" type="button" class="btn city14">Qo'qon</button>
+                        <button onclick="cityName15()" type="button" class="btn city15">Xorazm</button>
+                        <button onclick="cityName16()" type="button" class="btn city16">Surxondaryo</button>
+                      </div>
+                    </div>
+                    <div class="modal-footer">     
+                    </div>
+                  </div>
+                </div>
+              </div>          
+        </div>
+
+        <div class="head-header2">
+            <div class="head-work">
+                <div class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="	https://www.ustabor.uz/images/sites/www.svg" alt="" style="margin-right: 9px;">
+                        Qurilish ishlari                                      
+                    </div>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="work.html"><img src="https://www.ustabor.uz/images/sites/www.svg" alt="qurilish" style="margin-right: 9px;">Qurilish ishlari</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/auto.svg" alt="auto">Avtomobil ta'mirlash</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/tech.svg" alt="tech">Maishiy Texnika</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/home.svg" alt="home">Maishiy xizmat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="head-blog">Blog</a>
+            
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <a href="#" id="head-sign" class="shadow pl-5 bg-body-tertiary rounded rounded-pill">Kirish</a>                    
+            </button>
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="font-size: 16px;font-weight: 700;">Saytga kirish</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form2">
+                    <input type="email" placeholder="Elektron pochta yoki telefon">
+                    <input type="password" placeholder="Parol">
+                    <div class="parol-text"><a href="#" class="parol">Parolni unutdingizmi?</a></div>
+                    <div class="btn kirish">Kirish</div>
+                    <div class="line">
+                        <div class="line1"></div>
+                        <div class="line-text">yoki</div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="app-kirish">
+                        <a href="#"><img src="https://www.ustabor.uz/images/social/apple.svg" alt=""></a>
+                        <a href="#"><img src="https://www.ustabor.uz/images/social/facebook.svg" alt=""></a>
+                        <a href="#"><img src="	https://www.ustabor.uz/images/social/google.svg" alt=""></a>
+                    </div>
+                </form>
+                <div class="parol-forget">
+                    Akkauntingiz yo'qmi?
+                    <a href="#">Ro'yhatdan oting</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+            </div>
+                </div>
+                </div>
+            </div>
+            <div class="head-phone">
+                <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="phone-svg"><svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                </div>
+                <div class="phone-inner-text">
+                    <div class="phone-title">Yana savollar qoldimi?</div>
+                    <div class="hint">Istalgan vaqtda bizning "issiq" liniyamizga qo'ng'iroq qiling. Bizning aloqa operatorlarimiz 24/7 va barcha savollarga javob berishdan xursand</div>
+                    <a href="tel:+998781202255" class="phone-num">+998 78 120-22-55</a>
+                </div>
+            </div>
+            <div class="lang-uz-ru" onmouseover="lang1(this)" onmouseout="lang2(this)">
+                <div class="lang-hover">
+                    <div class="lang">UZ</div>
+                    <div class="lang-shake"></div>
+                </div>
+                <div class="language">
+                    <a href="#" class="lang-uz item">
+                       <img src="https://www.ustabor.uz/images/flag/uz.svg" alt=""> O'zbekcha
+                    </a>
+                    <a href="#" class="lang-ru item">
+                       <img src="https://www.ustabor.uz/images/flag/ru.svg" alt=""> Русский
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="work-main">
+            <div class="order">
+                <div class="svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 4C8.34315 4 7 5.34315 7 7V23C7 24.6569 8.34315 26 10 26H22C23.6569 26 25 24.6569 25 23V7C25 5.34315 23.6569 4 22 4H10ZM12 9C11.4477 9 11 9.44772 11 10C11 10.5523 11.4477 11 12 11H20C20.5523 11 21 10.5523 21 10C21 9.44772 20.5523 9 20 9H12ZM11 15C11 14.4477 11.4477 14 12 14H20C20.5523 14 21 14.4477 21 15C21 15.5523 20.5523 16 20 16H12C11.4477 16 11 15.5523 11 15ZM12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21H17C17.5523 21 18 20.5523 18 20C18 19.4477 17.5523 19 17 19H12Z" fill="currentColor"></path></svg>
+                </div>
+                <div class="text">Buyurtma</div>
+            </div>
+            <div class="order ustalar">
+                <div class="svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.5" cy="10.5" r="5.5" fill="currentColor"></circle><path d="M15.5 16C11.1479 16 7.41423 18.5217 5.822 22.1146C4.92696 24.1343 6.79086 26 9 26H22C24.2091 26 26.073 24.1343 25.178 22.1146C23.5858 18.5217 19.8521 16 15.5 16Z" fill="currentColor"></path></svg>
+                </div>
+                <div class="text">Ustalar</div>
+            </div>
+            <div class="order">
+                <div class="svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.5294 6C19.4676 6 18.4511 6.21281 17.6587 6.60902C16.9331 6.97181 16.0588 7.67978 16.0588 8.79412C16.0588 9.90846 16.9331 10.6164 17.6587 10.9792C18.4511 11.3754 19.4676 11.5882 20.5294 11.5882C21.5912 11.5882 22.6077 11.3754 23.4001 10.9792C24.1257 10.6164 25 9.90846 25 8.79412C25 7.67978 24.1257 6.97181 23.4001 6.60902C22.6077 6.21281 21.5912 6 20.5294 6ZM18.0708 12.0356C17.7006 11.5417 17.0001 11.4414 16.5062 11.8116C16.0123 12.1819 15.912 12.8824 16.2822 13.3763C16.7183 13.958 17.4112 14.3349 18.0965 14.5674C18.81 14.8094 19.6492 14.9412 20.5295 14.9412C21.4097 14.9412 22.249 14.8094 22.9625 14.5674C23.6477 14.3349 24.3407 13.958 24.7767 13.3763C25.1469 12.8824 25.0467 12.1819 24.5528 11.8116C24.0588 11.4414 23.3583 11.5417 22.9881 12.0356C22.9361 12.105 22.7266 12.287 22.2444 12.4505C21.7904 12.6046 21.1972 12.7059 20.5295 12.7059C19.8618 12.7059 19.2686 12.6046 18.8146 12.4505C18.3324 12.287 18.1229 12.105 18.0708 12.0356ZM10.4706 12.7059C9.40881 12.7059 8.3923 12.9187 7.59987 13.3149C6.8743 13.6777 6 14.3857 6 15.5C6 16.6143 6.8743 17.3223 7.59987 17.6851C8.3923 18.0813 9.40881 18.2941 10.4706 18.2941C11.5324 18.2941 12.5489 18.0813 13.3413 17.6851C14.0669 17.3223 14.9412 16.6143 14.9412 15.5C14.9412 14.3857 14.0669 13.6777 13.3413 13.3149C12.5489 12.9187 11.5324 12.7059 10.4706 12.7059ZM6.44738 18.5175C6.9413 18.1473 7.64181 18.2476 8.01202 18.7415C8.06404 18.8109 8.27356 18.9928 8.75576 19.1564C9.20975 19.3104 9.80295 19.4118 10.4707 19.4118C11.1384 19.4118 11.7316 19.3104 12.1855 19.1564C12.6677 18.9928 12.8773 18.8109 12.9293 18.7415C13.2995 18.2476 14 18.1473 14.4939 18.5175C14.9878 18.8877 15.0881 19.5882 14.7179 20.0822C14.2819 20.6639 13.5889 21.0408 12.9036 21.2732C12.1902 21.5153 11.3509 21.6471 10.4707 21.6471C9.59038 21.6471 8.75114 21.5153 8.03767 21.2732C7.35241 21.0408 6.65944 20.6639 6.2234 20.0822C5.85319 19.5882 5.95347 18.8877 6.44738 18.5175ZM18.0708 18.7415C17.7006 18.2476 17.0001 18.1473 16.5062 18.5175C16.0123 18.8877 15.912 19.5882 16.2822 20.0822C16.7183 20.6639 17.4112 21.0408 18.0965 21.2732C18.81 21.5153 19.6492 21.6471 20.5295 21.6471C21.4097 21.6471 22.249 21.5153 22.9625 21.2732C23.6477 21.0408 24.3407 20.6639 24.7767 20.0822C25.1469 19.5882 25.0467 18.8877 24.5528 18.5175C24.0588 18.1473 23.3583 18.2476 22.9881 18.7415C22.9361 18.8109 22.7266 18.9928 22.2444 19.1564C21.7904 19.3104 21.1972 19.4118 20.5295 19.4118C19.8618 19.4118 19.2686 19.3104 18.8146 19.1564C18.3324 18.9928 18.1229 18.8109 18.0708 18.7415ZM16.5062 15.1646C17.0001 14.7944 17.7006 14.8946 18.0708 15.3886C18.1229 15.458 18.3324 15.6399 18.8146 15.8035C19.2686 15.9575 19.8618 16.0589 20.5295 16.0589C21.1972 16.0589 21.7904 15.9575 22.2444 15.8035C22.7266 15.6399 22.9361 15.458 22.9881 15.3886C23.3583 14.8946 24.0588 14.7944 24.5528 15.1646C25.0467 15.5348 25.1469 16.2353 24.7767 16.7292C24.3407 17.311 23.6477 17.6878 22.9625 17.9203C22.249 18.1623 21.4097 18.2942 20.5295 18.2942C19.6492 18.2942 18.81 18.1623 18.0965 17.9203C17.4112 17.6878 16.7183 17.311 16.2822 16.7292C15.912 16.2353 16.0123 15.5348 16.5062 15.1646ZM6.44738 21.8705C6.9413 21.5002 7.64181 21.6005 8.01202 22.0944C8.06404 22.1638 8.27356 22.3458 8.75576 22.5094C9.20975 22.6634 9.80295 22.7648 10.4707 22.7648C11.1384 22.7648 11.7316 22.6634 12.1855 22.5094C12.6677 22.3458 12.8773 22.1638 12.9293 22.0944C13.2995 21.6005 14 21.5002 14.4939 21.8705C14.9878 22.2407 15.0881 22.9412 14.7179 23.4351C14.2819 24.0168 13.5889 24.3937 12.9036 24.6262C12.1902 24.8682 11.3509 25.0001 10.4707 25.0001C9.59038 25.0001 8.75114 24.8682 8.03767 24.6262C7.35241 24.3937 6.65944 24.0168 6.2234 23.4351C5.85319 22.9412 5.95347 22.2407 6.44738 21.8705ZM18.0708 22.0944C17.7006 21.6005 17.0001 21.5002 16.5062 21.8705C16.0123 22.2407 15.912 22.9412 16.2822 23.4351C16.7183 24.0168 17.4112 24.3937 18.0965 24.6262C18.81 24.8682 19.6492 25.0001 20.5295 25.0001C21.4097 25.0001 22.249 24.8682 22.9625 24.6262C23.6477 24.3937 24.3407 24.0168 24.7767 23.4351C25.1469 22.9412 25.0467 22.2407 24.5528 21.8705C24.0588 21.5002 23.3583 21.6005 22.9881 22.0944C22.9361 22.1638 22.7266 22.3458 22.2444 22.5094C21.7904 22.6634 21.1972 22.7648 20.5295 22.7648C19.8618 22.7648 19.2686 22.6634 18.8146 22.5094C18.3324 22.3458 18.1229 22.1638 18.0708 22.0944Z" fill="currentColor"></path></svg>
+                </div>
+                <div class="text">Narxlar</div>
+            </div>
+            <div class="order">
+                <div class="svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.6667 7H9.33333C7.4925 7 6 8.4925 6 10.3333V13.6667C6 15.5083 7.4925 17 9.33333 17H10.1667V20.3333L13.9167 17H17.6667C19.5075 17 21 15.5083 21 13.6667V10.3333C21 8.4925 19.5075 7 17.6667 7Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.168 20.75C15.168 21.9008 16.1005 22.8333 17.2513 22.8333H19.3346L21.8346 25.3333V22.8333H23.0846C24.2355 22.8333 25.168 21.9008 25.168 20.75V19.0833C25.168 17.9325 24.2355 17 23.0846 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+                <div class="text">JivoChat</div>
+            </div>
+        </div>
+        <div class="border-bottom"></div>
+        
+
+        <div class="results">
+            <div class="results-head">
+                <div class="r">Natija</div>
+                <div class="filtr">
+                    Filtr
+                    <img src="https://www.ustabor.uz/images/ui/icon/filter.svg" alt="">
+                </div>
+            </div>
+            <div class="blocks">
+                <div class="block reklama">
+                    
+                    <div class="hint">Reklama</div>
+                    <a href="#" class="rek">
+                        <div class="logo-rek">
+                            <div class="img"><img src="https://www.ustabor.uz/file/b3/1b/66/b31b669006326c818854d596be455a2d" alt=""></div>
+                            <div class="logo-name">BOSCH</div>
+                        </div>
+                        <div class="preview">
+                            <img src="https://www.ustabor.uz/file/97/0e/d0/970ed087752debccc36c7aa0f769c182" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="block">
+                    <div class="block-phone"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                      </svg>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="	https://www.ustabor.uz/file/23/4f/8d/234f8db5a58e86968a2b15fecf7471e9" alt=""></div>
+                        <div>
+                            <div class="master-name">Шомурод</div>
+                            <div class="stars">
+                                <img src="https://www.ustabor.uz/images/ui/star.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star.svg" alt="">
+                                <div class="sharh">2 <span>sharhlar</span></div>
+                            </div>
+                            <div class="verify">
+                                <div class="verify-img" onmouseover="verify1(this)" onmouseout="verify2(this)"><img src="https://www.ustabor.uz/images/ui/badges/verified.svg" alt=""></div>
+                                <div class="verify-text">
+                                    <h5>Ma'suliyat!</h5>
+                                    <div class="text">Bu usta ishini o'z vaqtida bajaradi</div>
+                                </div>
+                                <div class="verify-img" onmouseover="verify3(this)" onmouseout="verify4(this)"><img src="https://www.ustabor.uz/images/ui/badges/approved.svg" alt=""></div>
+                            </div>
+                            <div class="advantage">
+                                <div class="hours">24/7</div>
+                                <div class="emergency">Shoshilinch chaqiruv</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="verify-text2"><div class="text">Foydalanuvchilar tomonidan tasdiqlangan</div></div>
+
+                    <div class="works">
+                        <div class="work-items">
+                            <div class="name">Elektr payvandlash</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 150 000 сўм</div>
+                        </div>
+                        <div class="work-items">
+                            <div class="name">Metall konstruktsiyalarni ishlab chiqarish</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 45 000 сўм</div>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="block">
+                    <div class="block-phone"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                      </svg>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="https://www.ustabor.uz/file/1e/ee/bb/1eeebb6f760925f2e3f3584232a65772" alt=""></div>
+                        <div>
+                            <div class="master-name">ZEBRA Жалюзи</div>
+                            <div class="stars">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">              
+                                <div class="sharh"><span></span></div>
+                            </div>
+                            <div class="verify">
+                                <div class="verify-img" onmouseover="verify5(this)" onmouseout="verify6(this)"><img src="https://www.ustabor.uz/images/ui/badges/verified.svg" alt=""></div>
+                                <div class="verify-text3">
+                                    <h5>Ma'suliyat!</h5>
+                                    <div class="text">Bu usta ishini o'z vaqtida bajaradi</div>
+                                </div>
+                                <div class="verify-img" onmouseover="verify7(this)" onmouseout="verify8(this)"><img src="https://www.ustabor.uz/images/ui/badges/approved.svg" alt=""></div>
+                            </div>
+                            <div class="advantage">
+                                <div class="hours">24/7</div>
+                                <div class="emergency">Shoshilinch chaqiruv</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="verify-text4"><div class="text">Foydalanuvchilar tomonidan tasdiqlangan</div></div>
+
+                    <div class="works">
+                        <div class="work-items">
+                            <div class="name">Jalyuzi yasang</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 66 000 сўм</div>
+                        </div>
+                        <div class="work-items">
+                            <div class="name">Jalyuzini ta'mirlash</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 10 000 сўм</div>
+                        </div>
+                        <div class="work-items">
+                            <div class="name">Panjurlarni tozalash</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 20 000 сўм</div>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="block">
+                    <div class="block-phone"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                      </svg>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="https://www.ustabor.uz/file/dd/b0/20/ddb020f0c52f082db4751ef4f2dd07d7" alt=""></div>
+                        <div>
+                            <div class="master-name">Ollonazarov Safarali</div>
+                            <div class="stars">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">              
+                                <div class="sharh"><span></span></div>
+                            </div>
+                            
+                            <div class="advantage">
+                                <div class="hours">24/7</div>
+                                <div class="emergency">Shoshilinch chaqiruv</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="works">
+                        <div class="work-items">
+                            <div class="name">Alukobondni o'rnatish</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 300 000 сўм</div>
+                        </div>
+                        <div class="work-items">
+                            <div class="name">Alukobondni demontaj qilish</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 200 000 сўм</div>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="block">
+                    <div class="block-phone"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                      </svg>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="	https://www.ustabor.uz/file/a8/dd/06/a8dd064a31fd8627f78e876406a576da" alt=""></div>
+                        <div>
+                            <div class="master-name">Негматов Фахриддин</div>
+                            <div class="stars">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">              
+                                <div class="sharh"><span></span></div>
+                            </div>
+                            <div class="verify">
+                                <div class="verify-img" onmouseover="verify9(this)" onmouseout="verify10(this)"><img src="https://www.ustabor.uz/images/ui/badges/approved.svg" alt=""></div>
+                            </div>
+                            <div class="advantage">
+                                <div class="hours">24/7</div>
+                                <div class="emergency">Shoshilinch chaqiruv</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="verify-text5"><div class="text">Foydalanuvchilar tomonidan tasdiqlangan</div></div>
+
+                    <div class="works">
+                        <div class="work-items">
+                            <div class="name">Devorga rasm solish</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 500 000 сўм</div>
+                        </div>
+                        <div class="work-items">
+                            <div class="name">Boshqa</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 500 000 сўм</div>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="block">
+                    <div class="block-phone"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                      </svg>
+                    </div>
+                    <div class="item">
+                        <div class="img"><img src="https://www.ustabor.uz/file/07/df/39/07df39071f2bc0a4c9a12395ff30b85e" alt=""></div>
+                        <div>
+                            <div class="master-name">Bubnov Maksim</div>
+                            <div class="stars">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">
+                                <img src="https://www.ustabor.uz/images/ui/star-empty.svg" alt="">              
+                                <div class="sharh"><span></span></div>
+                            </div>
+                            <div class="verify">
+                                <div class="verify-img" onmouseover="verify11(this)" onmouseout="verify12(this)"><img src="https://www.ustabor.uz/images/ui/badges/verified.svg" alt=""></div>
+                                <div class="verify-text6">
+                                    <h5>Ma'suliyat!</h5>
+                                    <div class="text">Bu usta ishini o'z vaqtida bajaradi</div>
+                                </div>
+                            </div>
+                            <div class="advantage">
+                                <div class="hours">24/7</div>
+                                <div class="emergency">Shoshilinch chaqiruv</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="works">
+                        <div class="work-items">
+                            <div class="name">Boshqa</div>
+                            <div class="down-line"></div>
+                            <div class="price">от 200 000 сўм</div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+
+            <div class="work-about">Uylarni, xonadonlarni, avtomobillarni va jihozlarni ta'mirlash bo'yicha vakolatli mutaxassislarni tanlang.  Katalog Toshkent va butun O'zbekistondan boʻlgan ta'mirlash bo'yicha mutaxassislarning aloqa maʼlumotlarini o'z ichiga oladi</div>
+        </div>
+
+        <footer class="futer border-top">
+            <div class="blocks">
+                <a href="index.html"><img src="https://www.ustabor.uz/images/logo/footer.svg" alt="logo"></a>
+                <div class="block">
+                    <a href="#">Tezkor beriladigan savollar</a>
+                    <a href="#">Katalog</a>
+                    <div class="call">Aloqada qoling:</div>
+                    <a href="#">Bu qanday ishlaydi</a>
+                    <a href="#">Murojaat uchun</a>
+                    <div class="call">
+                        <a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.125 0C22.4679 0 23.6161 0.476779 24.5697 1.43034C25.5232 2.3839 26 3.53212 26 4.875V21.125C26 22.4679 25.5232 23.6161 24.5697 24.5697C23.6161 25.5232 22.4679 26 21.125 26H17.9427V15.9284H21.3112L21.819 12.0013H17.9427V9.49609C17.9427 8.86415 18.0753 8.39019 18.3405 8.07422C18.6057 7.75825 19.122 7.60026 19.8893 7.60026L21.9544 7.58333V4.07943C21.2435 3.97786 20.2391 3.92708 18.9414 3.92708C17.4067 3.92708 16.1795 4.37847 15.2598 5.28125C14.3401 6.18403 13.8802 7.4592 13.8802 9.10677V12.0013H10.4948V15.9284H13.8802V26H4.875C3.53212 26 2.3839 25.5232 1.43034 24.5697C0.476779 23.6161 0 22.4679 0 21.125V4.875C0 3.53212 0.476779 2.3839 1.43034 1.43034C2.3839 0.476779 3.53212 0 4.875 0H21.125Z" fill="rgb(54, 54, 241)"></path>
+                            </svg></a>
+                        <a href="#" style="margin: 0px 10px;"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9995 12.3273C25.9992 12.5513 25.9989 12.7755 25.9989 13C25.9989 13.2245 25.9992 13.4487 25.9995 13.6727C26.0013 15.2391 26.0032 16.7958 25.9143 18.3654C25.8128 20.4473 25.3388 22.2922 23.8155 23.8155C22.2922 25.3388 20.4473 25.8128 18.3654 25.9143C16.7958 26.0032 15.2391 26.0013 13.6727 25.9995C13.4487 25.9992 13.2245 25.9989 13 25.9989C12.7755 25.9989 12.5513 25.9992 12.3273 25.9995C10.7609 26.0013 9.20421 26.0032 7.63455 25.9143C5.55269 25.8128 3.70779 25.3388 2.18447 23.8155C0.661161 22.2922 0.187241 20.4473 0.0856859 18.3654C-0.00316231 16.7958 -0.00132278 15.2391 0.000528224 13.6727C0.000792921 13.4487 0.00105785 13.2245 0.00105785 13C0.00105785 12.7755 0.000792921 12.5513 0.000528223 12.3273C-0.00132278 10.7609 -0.00316231 9.20421 0.0856859 7.63455C0.187241 5.55269 0.661161 3.70779 2.18447 2.18447C3.70779 0.66116 5.55269 0.187241 7.63455 0.0856859C9.20421 -0.00316231 10.7609 -0.00132278 12.3273 0.000528224C12.5513 0.000792921 12.7755 0.00105785 13 0.00105785C13.2245 0.00105785 13.4487 0.000792921 13.6727 0.000528223C15.2391 -0.00132278 16.7958 -0.00316231 18.3654 0.0856859C20.4473 0.187241 22.2922 0.66116 23.8155 2.18447C25.3388 3.70779 25.8128 5.55269 25.9143 7.63455C26.0032 9.20421 26.0013 10.7609 25.9995 12.3273ZM22 5.5C22 4.66848 21.3315 4 20.5 4C19.6685 4 19 4.66848 19 5.5C19 6.33152 19.6685 7 20.5 7C21.3315 7 22 6.33152 22 5.5ZM13 6C16.8731 6 20 9.1269 20 13C20 16.8731 16.8731 20 13 20C9.1269 20 6 16.8731 6 13C6 9.1269 9.1269 6 13 6ZM13 17C15.2031 17 17 15.2031 17 13C17 10.7969 15.2031 9 13 9C10.7969 9 9 10.7969 9 13C9 15.2031 10.7969 17 13 17Z" fill="red"></path>
+                            </svg></a>
+                        <a href="#"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0ZM18.6292 7.082C19.3454 6.76755 20.1112 7.40332 19.9866 8.20879L18.1418 20.1261C18.0297 20.8506 17.2585 21.2282 16.659 20.8523L11.314 17.5005C10.7569 17.1512 10.665 16.3421 11.1281 15.8646L15.9021 10.9426C16.073 10.7665 15.855 10.4821 15.655 10.6203L9.02279 15.2023C8.53253 15.541 7.92458 15.6335 7.36315 15.4547L4.42147 14.5179C3.8888 14.3483 3.85123 13.5703 4.36482 13.3448L18.6292 7.082Z" fill="rgb(217, 42, 240)"></path>
+                            </svg></a>
+                    </div>
+                    <a href="#">Narhlar Saxifasi</a>
+                    <a href="#">Qoidalar va Shartlar</a>
+                    <div class="call"></div>
+                    <a href="#">Blog</a>
+                    <a href="#">Sayt xaritasi</a>
+                    <div class="call"></div>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="text">Smartfoningizga bizning bepul ilovani yuklab oling!</div>
+                <div class="futer-btns">
+                    <a href="#"><img src="https://www.ustabor.uz/images/apps/appstore.svg" alt=""></a>
+                    <a href="#"><img src="https://www.ustabor.uz/images/apps/googleplay.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

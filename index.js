@@ -63,3 +63,158 @@ function dropdown11(){
     document.querySelector('.svg22').classList.toggle('quiz-svg2-active')
     document.querySelector('.quiz-text11').classList.toggle('quiz-text-active')
 }
+
+function bigImg(x) {
+    document.querySelector('.phone-inner-text').classList.add('phone-text-active')
+}
+
+function normalImg(x) {
+    document.querySelector('.phone-inner-text').classList.remove('phone-text-active')
+}
+
+function cityShake(x) {
+    document.querySelector('.flag-shake').classList.add('flag-shake-active')
+}
+
+function cityChoose(x) {
+    document.querySelector('.flag-shake').classList.remove('flag-shake-active')
+}
+
+function lang1(x) {
+    document.querySelector('.lang-shake').classList.add('flag-shake-active')
+    document.querySelector('.language').classList.add('language-active')
+}
+
+function lang2(x) {
+    document.querySelector('.lang-shake').classList.remove('flag-shake-active')
+    document.querySelector('.language').classList.remove('language-active')
+}
+
+function cityName1(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Toshkent"  
+}
+
+function cityName2(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Buxoro"  
+}
+
+function cityName3(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Andijon"  
+}
+
+function cityName4(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Jizzax"  
+}
+
+function cityName5(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Qashqadaryo"  
+}
+
+function cityName6(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Navoiy"  
+}
+
+function cityName7(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Namangan"  
+}
+
+function cityName8(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Samarqand"  
+}
+
+function cityName9(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Termiz"  
+}
+
+function cityName10(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Sirdaryo"  
+}
+
+function cityName11(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Farg'ona"  
+}
+
+function cityName12(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Qoraqalpoq"  
+}
+
+
+function cityName13(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Toshkent viloyati"  
+}
+
+function cityName14(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Qo'qon"  
+}
+
+function cityName15(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Xorazm"  
+}
+
+function cityName16(){
+    var city = document.getElementById('city-names')
+    city.innerText = "Surxondaryo"  
+}
+
+function verify1(x){
+    document.querySelector('.verify-text').classList.add('verify-text-active')
+}
+
+function verify2(x){
+    document.querySelector('.verify-text').classList.remove('verify-text-active')
+}
+
+function verify3(x){
+    document.querySelector('.verify-text2').classList.add('verify-text-active')
+}
+
+function verify4(x){
+    document.querySelector('.verify-text2').classList.remove('verify-text-active')
+}
+
+function verify5(x){
+    document.querySelector('.verify-text3').classList.add('verify-text-active')
+}
+
+function verify6(x){
+    document.querySelector('.verify-text3').classList.remove('verify-text-active')
+}
+
+function verify7(x){
+    document.querySelector('.verify-text4').classList.add('verify-text-active')
+}
+
+function verify8(x){
+    document.querySelector('.verify-text4').classList.remove('verify-text-active')
+}
+
+function verify9(x){
+    document.querySelector('.verify-text5').classList.add('verify-text-active')
+}
+
+function verify10(x){
+    document.querySelector('.verify-text5').classList.remove('verify-text-active')
+}
+
+function verify11(x){
+    document.querySelector('.verify-text6').classList.add('verify-text-active')
+}
+
+function verify12(x){
+    document.querySelector('.verify-text6').classList.remove('verify-text-active')
+}

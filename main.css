@@ -77,7 +77,7 @@
     content: "";
     display: inline-block;
     height: 24px;
-    margin-right: 16px;
+    margin-right: 11px;
     vertical-align: middle;
     width: 24px;
 }
@@ -116,6 +116,8 @@
 }
 
 .flag-uz{
+    display: flex;
+    align-items: center;
     cursor: pointer;
     font-size: 12px;
     font-weight: 700;
@@ -123,8 +125,25 @@
     margin-left: 24px;
 }
 
+.flag-shake,
+.lang-shake{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #c2c2c2;
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 1px;
+    margin-top: 3px;
+}
+
+.flag-shake-active{
+    margin-top: 6px;
+}
+
 .flag-uz:hover{
-    color: rgb(11, 140, 11);
+    color: rgb(15, 158, 15);
 }
 
 .flag-uz:focus{
@@ -171,6 +190,10 @@
     margin-top: 6.5px;
 }
 
+.head-work .dropdown:hover{
+    color: #898585;
+}
+
 .head-work img{
     height: 24px;
     width: 24px;
@@ -208,12 +231,6 @@
     opacity: .7;
 }
 
-.head-phone{
-    padding: 6px 10px;
-    border-radius: 50%;
-    background-color: rgb(125, 160, 65);
-    margin-left: 20px;
-}
 
 .form2{
     padding: 0px 71px;
@@ -287,9 +304,13 @@
 .app-kirish{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 16px;
 }
 
 .parol-forget{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
     color: #333;
     font-size: 14px;
     font-weight: 600;
@@ -298,10 +319,21 @@
     padding: 19px 0;
 }
 
+
 .parol-forget a{
     color: #00ab2d;
     font-weight: 600;
     text-decoration: none;
+}
+
+.head-phone .phone-svg{
+    border-radius: 50%;
+    background-color: rgb(125, 160, 65);
+    padding: 7px 10px;
+}
+
+.head-phone .phone-svg:hover{
+    background-color: rgb(104, 134, 51);
 }
 
 .head-phone svg{
@@ -309,14 +341,113 @@
     padding: .5px;
 }
 
+.phone-inner-text{
+    display: none;
+    padding: 24px;
+    position: absolute;
+    right: 48px;
+    top: 86%;
+    background-color: #fff;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 60px rgba(20,76,112,.1);
+    max-width: 298px;
+}
+
+.phone-text-active{
+    display: block;
+}
+
+.head-phone .phone-title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+.head-phone .hint{
+    color: rgba(0,0,0,.5);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.head-phone .phone-num{
+    color: #00ab2d;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+}
+
 .lang{
     font-size: 12px;
     font-weight: 700;
-    cursor: pointer;
     padding-bottom: 8px;
     padding-top: 8px;
     margin-left: 24px;
 }
+
+.lang-hover{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.lang-hover:hover{
+    opacity: .7;
+}
+
+.lang-uz-ru{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 3px;
+}
+
+.language{
+    display: none;
+    background-color: #fff  ;
+    position: absolute;
+    top: 43px;
+    right: -2px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 60px rgba(20,76,112,.1);
+    min-width: 150px;
+    padding: 6px 0;
+}
+
+.language .item{
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    min-height: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.language .item:hover{
+    background-color: #f4ebeb;
+}
+
+.language .item img{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.language-active{
+    display: block;
+}
+
+
 
 .head-search{
     display: flex;
@@ -359,7 +490,7 @@
 .form1 input[type='text']{
     height: 100%;
     margin-left: 20px;
-    width: 90%;
+    width: 52%;
     border: none;
 }
 
@@ -1127,3 +1258,44 @@
     padding-top: 10px;
 }
 /* Futer block end */
+
+/* Work block */
+.work-main{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 786px;
+    padding: 0 16px;
+}
+.work-main .order{
+    cursor: pointer;
+    width: 188.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-main .order svg{
+    margin-bottom: 6px;
+    color: #bcbcbc;
+    height: 32px;
+    width: 32px;
+}
+
+.work-main .order .text{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.order .text:hover{
+    color: rgba(0,0,0,.6);
+}
+
+.work-main .ustalar{
+    padding-bottom: 12px;
+    border-bottom: 3.5px solid #00ab2d;
+}
+
+.work-main .ustalar svg{
+    color: #00ab2d;
+}

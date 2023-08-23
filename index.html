@@ -23,9 +23,10 @@
                     <a href="index.html" class="logo">
                         <img src="https://www.ustabor.uz/images/logo/logo_uz.svg" alt="">
                     </a>
-                    <button class="flag-uz btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button onmouseover="cityShake(this)" onmouseout="cityChoose(this)" class="flag-uz btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="flag-img"></div>
-                        Viloyat
+                        <div id="city-names">Toshkent</div>
+                        <div class="flag-shake"></div>
                     </button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" >
@@ -36,26 +37,26 @@
                             </div>
                             <div class="modal-body city">
                               <div>
-                                <button class="btn">Toshkent</button>
-                                <button class="btn">Buxoro</button>
-                                <button class="btn">Andijon</button>
-                                <button class="btn">Jizzax</button>
-                                <button class="btn">Qashqadaryo</button>
-                                <button class="btn">Navoiy</button>
+                                <button onclick="cityName1()" type="button" class="btn city1">Toshkent</button>
+                                <button onclick="cityName2()" type="button" class="btn city2">Buxoro</button>
+                                <button onclick="cityName3()" type="button" class="btn city3">Andijon</button>
+                                <button onclick="cityName4()" type="button" class="btn city4">Jizzax</button>
+                                <button onclick="cityName5()" type="button" class="btn city5">Qashqadaryo</button>
+                                <button onclick="cityName6()" type="button" class="btn city6">Navoiy</button>
                               </div>
                               <div>
-                                <button class="btn">Namangan</button>
-                                <button class="btn">Samarqand</button>
-                                <button class="btn">Termez</button>
-                                <button class="btn">Sirdaryo</button>
-                                <button class="btn">Farg'ona</button>
-                                <button class="btn">Qoraqalpoq</button>
+                                <button onclick="cityName7()" type="button" class="btn city7">Namangan</button>
+                                <button onclick="cityName8()" type="button" class="btn city8">Samarqand</button>
+                                <button onclick="cityName9()" type="button" class="btn city9">Termiz</button>
+                                <button onclick="cityName10()" type="button" class="btn city10">Sirdaryo</button>
+                                <button onclick="cityName11()" type="button" class="btn city11">Farg'ona</button>
+                                <button onclick="cityName12()" type="button" class="btn city12">Qoraqalpoq</button>
                               </div>
                               <div>
-                                <button class="btn">Toshkent viloyati</button>
-                                <button class="btn">Qo'qon</button>
-                                <button class="btn">Xorazm</button>
-                                <button class="btn">Surxondaryo</button>
+                                <button onclick="cityName13()" type="button" class="btn city13">Toshkent viloyati</button>
+                                <button onclick="cityName14()" type="button" class="btn city14">Qo'qon</button>
+                                <button onclick="cityName15()" type="button" class="btn city15">Xorazm</button>
+                                <button onclick="cityName16()" type="button" class="btn city16">Surxondaryo</button>
                               </div>
                             </div>
                             <div class="modal-footer">
@@ -71,12 +72,12 @@
                 <div class="head-header2">
                     <div class="head-work">
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="	https://www.ustabor.uz/images/sites/www.svg" alt="" style="margin-right: 9px;">
                                 Qurilish ishlari                                      
-                            </a>
+                            </div>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/www.svg" alt="qurilish" style="margin-right: 9px;">Qurilish ishlari</a></li>
+                              <li><a class="dropdown-item" href="work.html"><img src="https://www.ustabor.uz/images/sites/www.svg" alt="qurilish" style="margin-right: 9px;">Qurilish ishlari</a></li>
                               <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/auto.svg" alt="auto">Avtomobil ta'mirlash</a></li>
                               <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/tech.svg" alt="tech">Maishiy Texnika</a></li>
                               <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/home.svg" alt="home">Maishiy xizmat</a></li>
@@ -112,11 +113,11 @@
                                 <a href="#"><img src="https://www.ustabor.uz/images/social/facebook.svg" alt=""></a>
                                 <a href="#"><img src="	https://www.ustabor.uz/images/social/google.svg" alt=""></a>
                             </div>
-                            <div class="parol-forget">
-                                Akkauntingiz yo'qmi?
-                                <a href="#">Ro'yhatdan oting</a>
-                            </div>
                         </form>
+                        <div class="parol-forget">
+                            Akkauntingiz yo'qmi?
+                            <a href="#">Ro'yhatdan oting</a>
+                        </div>
                     </div>
                     <div class="modal-footer">
                     
@@ -125,11 +126,30 @@
                         </div>
                     </div>
                     <div class="head-phone">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <div onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="phone-svg"><svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                           </svg>
+                        </div>
+                        <div class="phone-inner-text">
+                            <div class="phone-title">Yana savollar qoldimi?</div>
+                            <div class="hint">Istalgan vaqtda bizning "issiq" liniyamizga qo'ng'iroq qiling. Bizning aloqa operatorlarimiz 24/7 va barcha savollarga javob berishdan xursand</div>
+                            <a href="tel:+998781202255" class="phone-num">+998 78 120-22-55</a>
+                        </div>
                     </div>
-                    <div class="lang">UZ</div>
+                    <div class="lang-uz-ru" onmouseover="lang1(this)" onmouseout="lang2(this)">
+                        <div class="lang-hover">
+                            <div class="lang">UZ</div>
+                            <div class="lang-shake"></div>
+                        </div>
+                        <div class="language">
+                            <a href="#" class="lang-uz item">
+                               <img src="https://www.ustabor.uz/images/flag/uz.svg" alt=""> O'zbekcha
+                            </a>
+                            <a href="#" class="lang-ru item">
+                               <img src="https://www.ustabor.uz/images/flag/ru.svg" alt=""> Русский
+                            </a>
+                        </div>
+                    </div>
                 </div>  
             </div>
             <header class="header">
@@ -237,7 +257,7 @@
                 </div>
                 <div class="category-end-text">Bizning saytimizda har qanday vazifa uchun mutaxassislar mavjud. Katalogdan usta izlashingizning hojati ham yo'q — ariza shaklini to'ldiring va bizning operatorlarimizning o'zlari uni siz uchun topib berishadi</div>
                 <div class="catalog-buttons">
-                    <div><a href="#" class="category-btn">Buyurtma qoldiring</a></div>
+                    <div><a href="#" class="category-btn">Buyurtma qoldiring.</a></div>
                     <div><a href="#" class="category-btn1">Katalogga o'tish <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00ab2d" class="bi bi-arrow-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                       </svg></a></div>
