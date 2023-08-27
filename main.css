@@ -63,6 +63,13 @@
     align-items: center;
  }
 
+.form3-parol{
+    color: rgba(0,0,0,.5);
+    font-weight: 600;
+    font-size: 12px;
+    margin: 16px 0px;
+}
+
 .logo img{
     height: 46px;
     width: 191px;

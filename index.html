@@ -23,12 +23,12 @@
                     <a href="index.html" class="logo">
                         <img src="https://www.ustabor.uz/images/logo/logo_uz.svg" alt="">
                     </a>
-                    <button onmouseover="cityShake(this)" onmouseout="cityChoose(this)" class="flag-uz btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button onmouseover="cityShake(this)" onmouseout="cityChoose(this)" class="flag-uz btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <div class="flag-img"></div>
                         <div id="city-names">Toshkent</div>
                         <div class="flag-shake"></div>
                     </button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" >
                           <div class="modal-content">
                             <div class="modal-header">
@@ -78,16 +78,16 @@
                             </div>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="work.html"><img src="https://www.ustabor.uz/images/sites/www.svg" alt="qurilish" style="margin-right: 9px;">Qurilish ishlari</a></li>
-                              <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/auto.svg" alt="auto">Avtomobil ta'mirlash</a></li>
-                              <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/tech.svg" alt="tech">Maishiy Texnika</a></li>
-                              <li><a class="dropdown-item" href="#"><img src="https://www.ustabor.uz/images/sites/home.svg" alt="home">Maishiy xizmat</a></li>
+                              <li><a class="dropdown-item" href="auto.html"><img src="https://www.ustabor.uz/images/sites/auto.svg" alt="auto">Avtomobil ta'mirlash</a></li>
+                              <li><a class="dropdown-item" href="tech.html"><img src="https://www.ustabor.uz/images/sites/tech.svg" alt="tech">Maishiy Texnika</a></li>
+                              <li><a class="dropdown-item" href="xizmat.html"><img src="https://www.ustabor.uz/images/sites/home.svg" alt="home">Maishiy xizmat</a></li>
                             </ul>
                         </div>
                     </div>
                     <a href="#" class="head-blog">Blog</a>
                     
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <a href="#" id="head-sign" class="shadow pl-5 bg-body-tertiary rounded rounded-pill">Kirish</a>                    
+                        <div id="head-sign" class="shadow pl-5 bg-body-tertiary rounded rounded-pill">Kirish</div>                    
                     </button>
   
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -101,7 +101,28 @@
                         <form action="" class="form2">
                             <input type="email" placeholder="Elektron pochta yoki telefon">
                             <input type="password" placeholder="Parol">
-                            <div class="parol-text"><a href="#" class="parol">Parolni unutdingizmi?</a></div>
+                            
+                            <button type="button" class="btn form3-parol" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Parolni unutdingizmi?
+                            </button>
+  
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                             <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                     </div>
+                                    <div class="modal-body">
+                                        parol
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                               </div>
+                            </div>
+
                             <div class="btn kirish">Kirish</div>
                             <div class="line">
                                 <div class="line1"></div>
